@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.add=add;exports.remove=remove;exports.clear=clear;var _constants=require("./constants");function add(role){return{type:_constants.RRP_ADD_PERMISSION,role:role}}function remove(role){return{type:_constants.RRP_REMOVE_PERMISSION,role:role}}function clear(){return{type:_constants.RRP_CLEAR}}
