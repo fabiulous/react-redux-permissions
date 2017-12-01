@@ -1,6 +1,6 @@
 {
   "name": "react-redux-permissions",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A permissions library for react and redux applications.",
   "main": "dist/index.js",
   "scripts": {
