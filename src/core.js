@@ -3,7 +3,7 @@ export const checkVisibility = (roles, allowed, except) => {
     return false
   }
   if (allowed.length > 0) {
-    if (allowed.every(elem => roles.indexOf(elem) > -1)) {
+    if (allowed.some(elem => roles.indexOf(elem) > -1)) {
       return true
     }
     return false
