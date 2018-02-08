@@ -5,7 +5,7 @@ export const reducer = (state = [], action = {}) => {
     case RRP_ADD_PERMISSION:
       return [
         ...state,
-        action.role,
+        ...action.roles,
       ]
     case RRP_REMOVE_PERMISSION:
       return state.filter(role => role !== action.role)

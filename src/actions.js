@@ -1,9 +1,9 @@
 import { RRP_ADD_PERMISSION, RRP_REMOVE_PERMISSION, RRP_CLEAR } from "./constants"
 
-export function add(role) {
+export function add(roles = []) {
   return {
     type: RRP_ADD_PERMISSION,
-    role,
+    roles: Array.isArray(roles) ? roles : [roles],
   }
 }
 
